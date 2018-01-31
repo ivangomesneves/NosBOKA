@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+	<meta charset="utf-8"/>
+	<title>Tratamento</title>
+	<link rel="stylesheet" href="_css/estilo_geral.css"/>
+<body>
+	<div >
+		<header id="Cabecalho">
+		<!-- cabecalho a esquerda-contem logotipo -->
+			<div id="header-left">
+				<a id="logHef" title="S.G.C.O Nôs Boka">
+				<div class="LogoTipo">
+				</div>
+				</a>
+			</div>
+			<!-- cabecalho a direita-contem nome do SGCD -->
+			<div id="header-right">
+				<div class="SGCD">
+				
+				</div>
+			</div>
+       	
+		</header>
+		<!-- menu horizontal com dropdown -->
+		<div class="menu">
+		<hr>
+			<ul>
+				<li><a class="active" href="javascript:location.href='http://localhost/SGCD/home.html'">Inicio</a></li>
+				<li class="dropdown"><a href=javascript:void(0)" class="dropbtn">Registos</a>
+					<div class="dropdown-content">
+						<a href="javascript:location.href='http://localhost/SGCD/dentista.html'">Dentista</a>
+						<a href="javascript:location.href='http://localhost/SGCD/funcionario.html'">Funcionário</a>
+						<a href="javascript:location.href='http://localhost/SGCD/paciente.html'">Pacientes</a>
+					</div>
+				</li>
+				<li class="dropdown"><a href=javascript:void(0)" class="dropbtn">Tarefas</a>
+					<div class="dropdown-content">
+						<a href="javascript:location.href='http://localhost/SGCD/orcamento.html'">Orçamentos</a>
+						<a href="javascript:location.href='http://localhost/SGCD/tratamento.html'">Tratamentos</a>
+						<a href="javascript:location.href='http://localhost/SGCD/agenda.html'">Marcação</a>
+					</div>
+				</li>
+				<li class="dropdown"><a href=javascript:void(0)" class="dropbtn">Ajuda</a>
+					<div class="dropdown-content">
+						<a href="javascript:location.href='http://localhost/SGCD/versao.html'">Nota da Versão</a>
+						<a href="javascript:location.href='http://localhost/SGCD/sobre.html'">Sobre SGCD</a>
+						<a href="javascript:location.href='http://localhost/SGCD/suporte.html'">Suporte</a>
+					</div>
+				</li>
+				<li style="float:right; background-color: red"><a class="sair" href="javascript:location.href='http://localhost/SGCD/index.html'">Sair</a></li>
+			</ul>
+		</div>
+		
+		<div class="CorpoPagina">
+			
+			<!-- todo conteudo do corpo da pagina -->
+			<div class="Conteudo">
+				<!-- area contendo os icones de acesso rapido -->
+				<div class="acesso_rapido">
+					<table >
+						<tr>
+							<td>
+							<a href="javascript:location.href='http://localhost/SGCD/paciente_form.html'"><img src="_imagem/icon1.png" alt="icone 1" /></a>
+							</td>
+							<td style="width:40px">
+							</td>
+							<td>
+							<a href="javascript:location.href='http://localhost/SGCD/tratamento.html'">
+								<img src="_imagem/icon2.png" alt="icone 2" />
+							</a>
+							</td>
+							<td style="width:40px">
+							</td>
+							<td>
+							<a href="javascript:location.href='http://localhost/SGCD/agenda.html'">
+								<img src="_imagem/icon3.png" alt="icone 3" />
+							</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<br />
+				<br />
+
+				<div class="formulario_outros">
+				<form method="post">
+				<!-- DADOS GERAIS-->
+					<fieldset>
+						<legend>Dados Gerais</legend>
+						<table cellspacing="10">
+							<tr>
+								<td>
+									<label for="codigo">Código: </label>
+								</td>
+								<td align="left">
+									<input type="text" name="codigo">
+								</td>
+								<td class="Cellspace"></td>
+								
+							</tr>
+							<tr class="Linespace"></tr>
+							<tr>
+								<td>
+									<label for="nome">Nome: </label>
+								</td>
+								<td colspan="6">
+									<input type="text" name="nome" style="width:364px;">
+									<button type="submit" >Marcação</button>
+								</td>
+							</tr>
+							<tr class="Linespace"></tr>
+							<tr>
+								<td>
+									<label for="endereco">Endereço: </label>
+								</td>
+								<td >
+									<input type="text" name="endereco">
+								</td>
+								<td class="Cellspace"></td>
+								<td>
+									<label for="bi">B.I. </label>
+								</td>
+								<td >
+									<input type="text" name="bi">
+								</td>
+							</tr>
+							<tr class="Linespace"></tr>
+							<tr>
+								<td>
+									<label for="nome">Telefone: </label>
+								</td>
+								<td align="left">
+									<input type="text" name="telefone">
+								</td>
+								<td class="Cellspace"></td>
+								<td>
+									<label for="sobrenome">Telemóvel: </label>
+								</td>
+								<td align="left">
+									<input type="text" name="telemovel">
+								</td>
+							</tr>
+							<tr class="Linespace"></tr>
+							<tr>
+								<td>
+									<label for="sexo">Sexo: </label>
+								</td>
+								<td align="left">
+									<select name="sexo">
+										<option value="masculino">Masculino</option>
+										<option value="feminino">Feminino</option>
+									</select>
+								</td>
+								<td class="Cellspace"></td>
+								<td>
+									<label for="tiposeguro">Tipo: </label>
+								</td>
+								<td align="left">
+									<select name="tipo">
+										<option value="masculino">Segurado</option>
+										<option value="feminino">Particular</option>
+									</select>
+								</td>
+							</tr>
+						</table>
+					</fieldset>
+					<br />
+					
+					<!--  DATAS-->
+					<fieldset>
+						<legend>Datas</legend>
+						<table cellspacing="10">
+							<tr>
+								<td>
+									<label for="cadastro">Cadastro: </label>
+								</td>
+								<td align="left">
+									<input type="text" name="cadastro">
+								</td>
+								<td class="Cellspace"></td>
+								<td>
+									<label for="1ªConsulta">1ª Consulta: </label>
+								</td>
+								<td align="left">
+									<input type="text" name="telemovel">
+								</td>
+							</tr>
+							<tr class="Linespace"></tr>
+							<tr>
+								<td>
+									<label for="uktima_C">Ultima Consulta: </label>
+								</td>
+								<td align="left">
+									<input type="text" name="uktima_C">
+								</td>
+								<td class="Cellspace"></td>
+								<td>
+									<label for="prox_marcacao">Prox. Marcação: </label>
+								</td>
+								<td align="left">
+									<input type="text" name="prox_marcacao">
+								</td>
+							</tr>
+							<tr class="Linespace"></tr>
+							<tr>
+								<td>
+									<label for="tipo_marcacao">Tipo Marcação: </label>
+								</td>
+								<td align="left">
+									<input type="text" name="tipo_marcacao">
+								</td>
+							</tr>
+						</table>
+					</fieldset>
+					<br />
+					
+					<!-- DADOS PAIS -->
+					<fieldset>
+						
+						<table cellspacing="10">
+							<tr>
+								<td>
+									<label for="anamnese">Anamnese </label>
+								</td>
+								<td align="left">
+									<input type="text" name="anamnese" style="width:520px;">
+								</td>
+							</tr>
+						</table>
+					</fieldset>
+					<br />
+					<input type="button" value="Salvar" onclick="AlertaSalvar()"/>
+						<script>
+							function AlertaSalvar() {
+								alert ("Tratamento registado com Sucesso!!!"); 
+								window.location = 'home.html';
+							}	     	
+						</script>
+						<input type="reset" value="Limpar">
+					</form>
+					<br />
+					<br />
+					<br />
+				</div>
+
+			</div>				
+		</div>
+		<br />
+		<br />
+		<p></p>
+		<!-- area do rodape da pagina -->
+		<div class="Rodape">
+			<div class="Footer">
+				<span>Copyright 2018 © Ivan Neves. Disciplina Interação Homem Máquina.      All Rights Reserved. S.G.C.D version 1.0&nbsp;- 
+                        January 2018.</span>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</head>
+</html>

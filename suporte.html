@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+	<meta charset="utf-8"/>
+	<title>Suporte</title>
+	<link rel="stylesheet" href="_css/estilo_geral.css"/>
+<body>
+	<div >
+		<header id="Cabecalho">
+		<!-- cabecalho a esquerda-contem logotipo -->
+			<div id="header-left">
+				<a id="logHef" title="S.G.C.O Nôs Boka">
+				<div class="LogoTipo">
+				</div>
+				</a>
+			</div>
+			<!-- cabecalho a direita-contem nome do SGCD -->
+			<div id="header-right">
+				<div class="SGCD">
+				
+				</div>
+			</div>
+       	
+		</header>
+		<!-- menu horizontal com dropdown -->
+		<div class="menu">
+		<hr>
+			<ul>
+				<li><a class="active" href="javascript:location.href='http://localhost/SGCD/home.html'">Inicio</a></li>
+				<li class="dropdown"><a href=javascript:void(0)" class="dropbtn">Registos</a>
+					<div class="dropdown-content">
+						<a href="javascript:location.href='http://localhost/SGCD/dentista.html'">Dentista</a>
+						<a href="javascript:location.href='http://localhost/SGCD/funcionario.html'">Funcionário</a>
+						<a href="javascript:location.href='http://localhost/SGCD/paciente.html'">Pacientes</a>
+					</div>
+				</li>
+				<li class="dropdown"><a href=javascript:void(0)" class="dropbtn">Tarefas</a>
+					<div class="dropdown-content">
+						<a href="javascript:location.href='http://localhost/SGCD/orcamento.html'">Orçamentos</a>
+						<a href="javascript:location.href='http://localhost/SGCD/tratamento.html'">Tratamentos</a>
+						<a href="javascript:location.href='http://localhost/SGCD/agenda.html'">Marcação</a>
+					</div>
+				</li>
+				<li class="dropdown"><a href=javascript:void(0)" class="dropbtn">Ajuda</a>
+					<div class="dropdown-content">
+						<a href="javascript:location.href='http://localhost/SGCD/versao.html'">Nota da Versão</a>
+						<a href="javascript:location.href='http://localhost/SGCD/sobre.html'">Sobre SGCD</a>
+						<a href="javascript:location.href='http://localhost/SGCD/suporte.html'">Suporte</a>
+					</div>
+				</li>
+				<li style="float:right; background-color: red"><a class="sair" href="javascript:location.href='http://localhost/SGCD/index.html'">Sair</a></li>
+			</ul>
+		</div>
+		
+		<div class="CorpoPagina">
+			
+			<!-- todo conteudo do corpo da pagina -->
+			<div class="Conteudo">
+				<!-- area contendo os icones de suporte -->
+			<br />
+			<h2>Fale Conosco</h2>
+			<!-- Campo de suporte-->
+							<table>
+								<tr>
+									<td>
+										<label for="nome">Nome Completo: </label>
+									</td>
+									<td align="left">
+										<input type="text" name="nome">
+									</td>
+									<td class="Cellspace"></td>
+								</tr>
+								<tr class="Linespace"></tr>
+								<tr>
+									<td>
+										<label for="nome">E-mail: </label>
+									</td>
+									<td align="left">
+										<input type="text" name="E-mail">
+									</td>
+								</tr>
+								<tr class="Linespace"></tr>
+								<tr>
+									<td>
+										<label for="nome">Mensagem: </label>
+									</td>
+									<td align="left">
+										<textarea rows="10" cols="80">
+											
+										</textarea>
+									</td>
+									<td class="Cellspace"></td>
+								</tr>
+							</table>
+							<br/>
+						<input type="button" value="Enviar" onclick="AlertaEnviar()"/>
+						<script>
+							function AlertaEnviar() {
+								alert ("Sua mensagem foi enviada com Sucesso!!!"); 
+								window.location = 'home.html';
+							}	     	
+						</script>
+						<input type="reset" value="Limpar">
+						<br/>
+			</div>
+		</div>
+		<!-- area do rodape da pagina -->
+		<div class="Rodape">
+			<div class="Footer">
+				<span>Copyright 2018 © Ivan Neves. Disciplina Interação Homem Máquina.      All Rights Reserved. S.G.C.D version 1.0&nbsp;- 
+                        January 2018.</span>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</head>
+</html>

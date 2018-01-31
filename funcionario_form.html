@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+	<meta charset="utf-8"/>
+	<title>Registo Funcionário</title>
+	<link rel="stylesheet" href="_css/estilo_geral.css"/>
+<body>
+	<div >
+		<header id="Cabecalho">
+		<!-- cabecalho a esquerda-contem logotipo -->
+			<div id="header-left">
+				<a id="logHef" title="S.G.C.O Nôs Boka">
+				<div class="LogoTipo">
+				</div>
+				</a>
+			</div>
+			<!-- cabecalho a direita-contem nome do SGCD -->
+			<div id="header-right">
+				<div class="SGCD">
+				
+				</div>
+			</div>
+       	
+		</header>
+		<!-- menu horizontal com dropdown -->
+		<div class="menu">
+		<hr>
+			<ul>
+				<li><a class="active" href="javascript:location.href='http://localhost/SGCD/home.html'">Inicio</a></li>
+				<li class="dropdown"><a href=javascript:void(0)" class="dropbtn">Registos</a>
+					<div class="dropdown-content">
+						<a href="javascript:location.href='http://localhost/SGCD/dentista.html'">Dentista</a>
+						<a href="javascript:location.href='http://localhost/SGCD/funcionario.html'">Funcionário</a>
+						<a href="javascript:location.href='http://localhost/SGCD/paciente.html'">Pacientes</a>
+					</div>
+				</li>
+				<li class="dropdown"><a href=javascript:void(0)" class="dropbtn">Tarefas</a>
+					<div class="dropdown-content">
+						<a href="javascript:location.href='http://localhost/SGCD/orcamento.html'">Orçamentos</a>
+						<a href="javascript:location.href='http://localhost/SGCD/tratamento.html'">Tratamentos</a>
+						<a href="javascript:location.href='http://localhost/SGCD/agenda.html'">Marcação</a>
+					</div>
+				</li>
+				<li class="dropdown"><a href=javascript:void(0)" class="dropbtn">Ajuda</a>
+					<div class="dropdown-content">
+						<a href="javascript:location.href='http://localhost/SGCD/versao.html'">Nota da Versão</a>
+						<a href="javascript:location.href='http://localhost/SGCD/sobre.html'">Sobre SGCD</a>
+						<a href="javascript:location.href='http://localhost/SGCD/suporte.html'">Suporte</a>
+					</div>
+				</li>
+				<li style="float:right; background-color: red"><a class="sair" href="javascript:location.href='http://localhost/SGCD/index.html'">Sair</a></li>
+			</ul>
+		</div>
+		
+		<div class="CorpoPagina">
+			
+			<!-- todo conteudo do corpo da pagina -->
+			<div class="Conteudo">
+				<!-- area contendo os icones de acesso rapido -->
+				<div class="acesso_rapido">
+					<table >
+						<tr>
+							<td>
+							<a href="javascript:location.href='http://localhost/SGCD/funcionario_form.html'"><img src="_imagem/icon5.png" alt="icone 1" /></a>
+							</td>
+							<td style="width:40px">
+							</td>
+							<td>
+							<a href="javascript:location.href='http://localhost/SGCD/tratamento.html'">
+								<img src="_imagem/icon2.png" alt="icone 2" />
+							</a>
+							</td>
+							<td style="width:40px">
+							</td>
+							<td>
+							<a href="javascript:location.href='http://localhost/SGCD/agenda.html'">
+								<img src="_imagem/icon3.png" alt="icone 3" />
+							</a>
+							</td>
+						</tr>
+					</table>
+					<form method="post">
+						<br />
+						<h2> Ficha do Funcionário</h2>
+						<!-- DADOS PESSOAIS-->
+						<fieldset>
+							<legend>Dados Pessoais</legend>
+							<table>
+								<tr>
+									<td>
+										<label for="nome">Nome: </label>
+									</td>
+									<td align="left">
+										<input type="text" name="nome">
+									</td>
+									<td class="Cellspace"></td>
+									<td>
+										<label for="sobrenome">Apelido: </label>
+									</td>
+									<td align="left">
+										<input type="text" name="sobrenome">
+									</td>
+								</tr>
+								<tr class="Linespace"></tr>
+								<tr>
+									<td>
+										<label for="nome">Morada: </label>
+									</td>
+									<td align="left">
+										<input type="text" name="morada">
+									</td>
+									<td class="Cellspace"></td>
+									<td>
+										<label for="sobrenome">Data Nascimento: </label>
+									</td>
+									<td align="left">
+										<input type="text" name="dia" size="2" maxlength="2" value="dd"> 
+										<input type="text" name="mes" size="2" maxlength="2" value="mm"> 
+										<input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+									</td>
+								</tr>
+								<tr class="Linespace"></tr>
+								<tr>
+									<td>
+										<label for="nome">Telemóvel: </label>
+									</td>
+									<td align="left">
+										<input type="text" name="telemóvel">
+									</td>
+									<td class="Cellspace"></td>
+									<td>
+										<label for="Email">E-mail: </label>
+									</td>
+									<td align="left">
+										<input type="text" name="Email">
+									</td>
+								</tr>
+							</table>
+						</fieldset>
+						<br />
+						<!--  DADOS PROFISSIONAIS-->
+						<fieldset>
+							<legend>Dados Profissionais</legend>
+							<table>
+									<td>
+									<label for="nome">Função Principal: </label>
+									</td>
+									<td>
+										<select>
+										  <option value="volvo">Escolhe a Função</option>
+										  <option value="saab">Assistente</option>
+										  <option value="opel">Recepcionista</option>
+										  <option value="audi">Administrativo</option>
+										  <option value="audi">Protésico</option>
+										</select>
+									</td>
+									<td class="Cellspace"></td>
+									<td>
+									<label for="nome">Função Secundária: </label>
+									</td>
+									<td>
+										<select>
+										  <option value="-">Escolhe a Função</option>
+										  <option value="saab">Assistente</option>
+										  <option value="opel">Recepcionista</option>
+										  <option value="audi">Administrativo</option>
+										  <option value="audi">Protésico</option>
+										</select>
+									</td>
+									<td class="Cellspace"></td>
+									<td>
+									<label for="nome">Activo: </label>
+									</td>
+									<td>
+										<select>
+										  <option value="-">--</option>
+										  <option value="saab">Sim</option>
+										  <option value="opel">Não</option>
+										</select>
+									</td>
+							    <tr>
+							    <tr class="Linespace"></tr>
+								<td>
+									<label for="sobrenome">Data Admissão: </label>
+									</td>
+									<td align="left">
+										<input type="text" name="dia" size="2" maxlength="2" value="dd"> 
+										<input type="text" name="mes" size="2" maxlength="2" value="mm"> 
+										<input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+									</td>
+									<td class="Cellspace"></td>	
+									<td>
+										<label for="ncom">Nº C.O.M: </label>
+									</td>
+									<td align="left">
+										<input type="text" name="ncom">
+									</td>
+
+							</table>
+						</fieldset>
+						<br/>
+						<!-- DADOS Acesso Pessoal-->
+						<fieldset>
+							<legend>Dados Acesso</legend>
+							<table>
+								<tr>
+									<td>
+										<label for="nomeuser">Nome de Utilizador: </label>
+									</td>
+									<td align="left">
+										<input type="text" name="nomeuser">
+									</td>
+								</tr>
+								<tr class="Linespace"></tr>
+								<tr>
+									<td>
+										<label for="password_user">Password:</label>
+									</td>
+									<td align="left">
+										<input type="Password" name="password_user">
+								    </td>
+								</tr>
+								<tr class="Linespace"></tr>
+								<tr>
+									<td>
+										<label for="confirmar_password">Confirmar Password:</label>
+									</td>
+									<td align="left">
+										<input type="Password" name="confirmar_password">
+									</td>
+								</tr>
+							</table>
+						</fieldset>
+						<br/>
+						<!-- HORARIO TRABALHO-->
+						<fieldset>
+							<legend>Horário de trabalho</legend>
+							<table>
+								<tr>
+									<td align="left">
+										<input type="checkbox" name="segunda" value="Segunda"> Segunda-Feira
+										<br />
+										<br />
+										<select class="select">
+										  <option value="volvo">--</option>
+										  <option value="volvo">08:00-12:00</option>
+										  <option value="saab">08:00-12:30</option>
+										  <option value="opel">08:00-13:00</option>
+										  <option value="audi">08:00-16:00</option>
+										</select>
+										<br />
+										<br />
+										<select class="select">
+										  <option value="volvo">--</option>
+										  <option value="volvo">14:00-18:00</option>
+										  <option value="saab">14:30-18:00</option>
+										  <option value="opel">14:00-17:00</option>
+										</select>
+									</td>
+									<td class="Cellspace"></td>
+									<td align="left">
+										<input type="checkbox" name="terca" value="Terca"> Terça-Feira
+										<br />
+										<br />
+										<select class="select">
+										  <option value="volvo">--</option>
+										  <option value="volvo">08:00-12:00</option>
+										  <option value="saab">08:00-12:30</option>
+										  <option value="opel">08:00-13:00</option>
+										  <option value="audi">08:00-16:00</option>
+										</select>
+										<br />
+										<br />
+										<select class="select">
+										  <option value="volvo">--</option>
+										  <option value="volvo">14:00-18:00</option>
+										  <option value="saab">14:30-18:00</option>
+										  <option value="opel">14:00-17:00</option>
+										</select>
+									</td>
+									<td class="Cellspace"></td>
+									<td align="left">
+										<input type="checkbox" name="quarta" value="Quarta"> Quarta-Feira
+										<br />
+										<br />
+										<select class="select">
+										  <option value="volvo">--</option>
+										  <option value="volvo">08:00-12:00</option>
+										  <option value="saab">08:00-12:30</option>
+										  <option value="opel">08:00-13:00</option>
+										  <option value="audi">08:00-16:00</option>
+										</select>
+										<br />
+										<br />
+										<select class="select">
+										  <option value="volvo">--</option>
+										  <option value="volvo">14:00-18:00</option>
+										  <option value="saab">14:30-18:00</option>
+										  <option value="opel">14:00-17:00</option>
+										</select>
+									</td>
+									<td class="Cellspace"></td>
+									<td align="left">
+										<input type="checkbox" name="quinta" value="Quinta"> Quinta-Feira
+										<br />
+										<br />
+										<select class="select">
+										  <option value="volvo">--</option>
+										  <option value="volvo">08:00-12:00</option>
+										  <option value="saab">08:00-12:30</option>
+										  <option value="opel">08:00-13:00</option>
+										  <option value="audi">08:00-16:00</option>
+										</select>
+										<br />
+										<br />
+										<select class="select">
+										  <option value="volvo">--</option>
+										  <option value="volvo">14:00-18:00</option>
+										  <option value="saab">14:30-18:00</option>
+										  <option value="opel">14:00-17:00</option>
+										</select>
+									</td>
+									<td class="Cellspace"></td>
+									<td align="left">
+										<input type="checkbox" name="sexta" value="Sexta"> Sexta-Feira
+										<br />
+										<br />
+										<select class="select">
+										  <option value="volvo">--</option>
+										  <option value="volvo">08:00-12:00</option>
+										  <option value="saab">08:00-12:30</option>
+										  <option value="opel">08:00-13:00</option>
+										  <option value="audi">08:00-16:00</option>
+										</select>
+										<br />
+										<br />
+										<select class="select">
+										  <option value="volvo">--</option>
+										  <option value="volvo">14:00-18:00</option>
+										  <option value="saab">14:30-18:00</option>
+										  <option value="opel">14:00-17:00</option>
+										</select>
+									</td>
+									<td class="Cellspace"></td>
+									<td align="left">
+										<input type="checkbox" name="Sabado" value="Sabado"> Sábado
+										<br />
+										<br />
+										<select class="select">
+										  <option value="volvo">--</option>
+										  <option value="volvo">09:00-13:00</option>
+										</select>
+									</td>
+								</tr>
+								<tr class="Linespace"></tr>
+							</table>
+						</fieldset>
+						<br/>
+						<input type="button" value="Salvar" onclick="AlertaSalvar()"/>
+						<script>
+							function AlertaSalvar() {
+								alert ("Funcionário registado com Sucesso!!!"); 
+								window.location = 'funcionario.html';
+							}	     	
+						</script>
+						<input type="reset" value="Limpar">
+						<br/>
+					</form>
+					<br />
+					<br />
+					<br />
+				</div>
+			</div>
+		</div>
+		<!-- area do rodape da pagina -->
+		<div class="Rodape">
+			<div class="Footer">
+				<span>Copyright 2018 © Ivan Neves. Disciplina Interação Homem Máquina.      All Rights Reserved. S.G.C.D version 1.0&nbsp;- 
+                        January 2018.</span>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</head>
+</html>

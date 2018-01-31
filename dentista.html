@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+	<meta charset="utf-8"/>
+	<title>Dentista</title>
+	<link rel="stylesheet" href="_css/estilo_geral.css"/>
+<body>
+	<div >
+		<header id="Cabecalho">
+		<!-- cabecalho a esquerda-contem logotipo -->
+			<div id="header-left">
+				<a id="logHef" title="S.G.C.O Nôs Boka">
+				<div class="LogoTipo">
+				</div>
+				</a>
+			</div>
+			<!-- cabecalho a direita-contem nome do SGCD -->
+			<div id="header-right">
+				<div class="SGCD">
+				
+				</div>
+			</div>
+       	
+		</header>
+		<!-- menu horizontal com dropdown -->
+		<div class="menu">
+		<hr>
+			<ul>
+				<li><a class="active" href="javascript:location.href='http://localhost/SGCD/home.html'">Inicio</a></li>
+				<li class="dropdown"><a href=javascript:void(0)" class="dropbtn">Registos</a>
+					<div class="dropdown-content">
+						<a href="javascript:location.href='http://localhost/SGCD/dentista.html'">Dentista</a>
+						<a href="javascript:location.href='http://localhost/SGCD/funcionario.html'">Funcionário</a>
+						<a href="javascript:location.href='http://localhost/SGCD/paciente.html'">Pacientes</a>
+					</div>
+				</li>
+				<li class="dropdown"><a href=javascript:void(0)" class="dropbtn">Tarefas</a>
+					<div class="dropdown-content">
+						<a href="javascript:location.href='http://localhost/SGCD/orcamento.html'">Orçamentos</a>
+						<a href="javascript:location.href='http://localhost/SGCD/tratamento.html'">Tratamentos</a>
+						<a href="javascript:location.href='http://localhost/SGCD/agenda.html'">Marcação</a>
+					</div>
+				</li>
+				<li class="dropdown"><a href=javascript:void(0)" class="dropbtn">Ajuda</a>
+					<div class="dropdown-content">
+						<a href="javascript:location.href='http://localhost/SGCD/versao.html'">Nota da Versão</a>
+						<a href="javascript:location.href='http://localhost/SGCD/sobre.html'">Sobre SGCD</a>
+						<a href="javascript:location.href='http://localhost/SGCD/suporte.html'">Suporte</a>
+					</div>
+				</li>
+				<li style="float:right; background-color: red"><a class="sair" href="javascript:location.href='http://localhost/SGCD/index.html'">Sair</a></li>
+			</ul>
+		</div>
+		
+		<div class="CorpoPagina">
+			
+			<!-- todo conteudo do corpo da pagina -->
+			<div class="Conteudo">
+				<!-- area contendo os icones de acesso rapido -->
+				<div class="acesso_rapido">
+					<table >
+						<tr>
+							<td>
+							<a href="javascript:location.href='http://localhost/SGCD/dentista_form.html'"><img src="_imagem/icon6.png" alt="icone 1" /></a>
+							</td>
+							<td style="width:40px">
+							</td>
+							<td>
+							<a href="javascript:location.href='http://localhost/SGCD/tratamento.html'">
+								<img src="_imagem/icon2.png" alt="icone 2" />
+							</a>
+							</td>
+							<td style="width:40px">
+							</td>
+							<td>
+							<a href="javascript:location.href='http://localhost/SGCD/agenda.html'">
+								<img src="_imagem/icon3.png" alt="icone 3" />
+							</a>
+							</td>
+						</tr>
+					</table>
+					<h2>Dentista</h2>
+					<br />
+					<table class="SecundarioTab"> 
+						<tr>
+							<td>
+								<label for="procurar">Procurar</label>
+							</td >
+						</tr>
+						<tr>
+							<td>
+								<img class="botaoSec" align="absmiddle" src="_imagem/icone-proc.png" />
+								<input type="text" name="procurar">
+							</td>
+						</tr>
+						<tr class="Linespace"></tr>
+						<tr>
+							<td>
+								<a href="javascript:location.href='http://localhost/SGCD/dentista_form.html'">
+								<img class="botaoSec" align="absmiddle" src="_imagem/icone-new.png" /></a>
+								<label for="novo_label">Novo Dentista</label>
+							</td >
+						</tr>
+					</table>
+					<br />
+					<!-- tabela das informações dos dentistas -->
+				<div class="tabelasInfo">
+					<table id="conteudo_table">
+						<tr>
+							<th>Nome Dentista</th>
+							<th>Morada</th>
+							<th>Telefone</th>
+							<th>Editar/Ver</th>
+							<th>Apagar</th>
+						</tr>
+						<tr>
+							<td>Sara Maria Silva Santos</td>
+							<td>Châ de Monte Sossego</td>
+							<td>977 80 47</td>
+							<td><a href="http://localhost/SGCD/dentista_form.html">
+								<img class="botaotabela" src="http:\\localhost\SGCD\_imagem\editar.png"/></a>
+							<td><img class="botaotabela" src="http:\\localhost\SGCD\_imagem\apagar.png" onclick="BotaoApagar()">
+								<script type="text/JavaScript">
+								    function BotaoApagar(){
+								        var agree=confirm("Deseja deletar os dados??");
+								        if (agree)
+								            return true ;
+								        else
+								            return false ;
+								    }
+								</script>
+							</td>
+						</tr>
+						<tr>
+							<td>Melissa Antonia Duarte Gomes</td>
+							<td>Bela Vista</td>
+							<td>589 10 07</td>
+							<td><a href="http://localhost/SGCD/dentista_form.html">
+								<img class="botaotabela" src="http:\\localhost\SGCD\_imagem\editar.png"/></a>
+							<td><img class="botaotabela" src="http:\\localhost\SGCD\_imagem\apagar.png" onclick="BotaoApagar()">
+								<script type="text/JavaScript">
+								    function BotaoApagar(){
+								        var agree=confirm("Deseja deletar os dados??");
+								        if (agree)
+								            return true ;
+								        else
+								            return false ;
+								    }
+								</script>
+							</td>
+						</tr>
+						<tr>
+							<td>Ana Carolina Santana</td>
+							<td>São Pedro</td>
+							<td>980 20 30</td>
+							<td><a href="http://localhost/SGCD/dentista_form.html">
+								<img class="botaotabela" src="http:\\localhost\SGCD\_imagem\editar.png"/></a>
+							<td><img class="botaotabela" src="http:\\localhost\SGCD\_imagem\apagar.png" onclick="BotaoApagar()">
+								<script type="text/JavaScript">
+								    function BotaoApagar(){
+								        var agree=confirm("Deseja deletar os dados??");
+								        if (agree)
+								            return true ;
+								        else
+								            return false ;
+								    }
+								</script>
+							</td>
+						<tr>
+							<td>Tanzania Catumba Bilguino</td>
+							<td>Baia</td>
+							<td>918 88 00</td>
+							<td><a href="http://localhost/SGCD/dentista_form.html">
+								<img class="botaotabela" src="http:\\localhost\SGCD\_imagem\editar.png"/></a>
+						<script>
+							function AlertaEditar() {
+								alert ("Deseja editar essa linha!!!"); 
+								window.location = 'dentista_form.html';
+							}	     	
+						</script>
+							</td>
+							<td><img class="botaotabela" src="http:\\localhost\SGCD\_imagem\apagar.png" onclick="BotaoApagar()">
+								<script>
+								    function BotaoApagar(){
+								        var agree=confirm("Deseja deletar os dados??");
+								        if (agree)
+								            return true ;
+								        else
+								            return false ;
+								    }
+								</script>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+							<!--Botão impressão -->
+				<br/>
+					<table class="SecundarioTab"> 
+						<tr>
+							<td>
+							<img src="_imagem/icon4.png" align="absmiddle" onclick="imprimir()" />
+								<script>
+										function imprimir() {
+											 window.print();
+										}	     	
+								</script>
+								<label for="imprimir_label">Imprimir</label>
+							</td >
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- area do rodape da pagina -->
+		<div class="Rodape">
+			<div class="Footer">
+				<span>Copyright 2018 © Ivan Neves. Disciplina Interação Homem Máquina.      All Rights Reserved. S.G.C.D version 1.0&nbsp;- 
+                        January 2018.</span>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</head>
+</html>

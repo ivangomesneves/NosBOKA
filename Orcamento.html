@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+	<meta charset="utf-8"/>
+	<title>Orçamento</title>
+	<link rel="stylesheet" href="_css/estilo_geral.css"/>
+<body>
+	<div >
+		<header id="Cabecalho">
+		<!-- cabecalho a esquerda-contem logotipo -->
+			<div id="header-left">
+				<a id="logHef" title="S.G.C.O Nôs Boka">
+				<div class="LogoTipo">
+				</div>
+				</a>
+			</div>
+			<!-- cabecalho a direita-contem nome do SGCD -->
+			<div id="header-right">
+				<div class="SGCD">
+				
+				</div>
+			</div>
+       	
+		</header>
+		<!-- menu horizontal com dropdown -->
+		<div class="menu">
+		<hr>
+			<ul>
+				<li><a class="active" href="javascript:location.href='http://localhost/SGCD/home.html'">Inicio</a></li>
+				<li class="dropdown"><a href=javascript:void(0)" class="dropbtn">Registos</a>
+					<div class="dropdown-content">
+						<a href="javascript:location.href='http://localhost/SGCD/dentista.html'">Dentista</a>
+						<a href="javascript:location.href='http://localhost/SGCD/funcionario.html'">Funcionário</a>
+						<a href="javascript:location.href='http://localhost/SGCD/paciente.html'">Pacientes</a>
+					</div>
+				</li>
+				<li class="dropdown"><a href=javascript:void(0)" class="dropbtn">Tarefas</a>
+					<div class="dropdown-content">
+						<a href="javascript:location.href='http://localhost/SGCD/orcamento.html'">Orçamentos</a>
+						<a href="javascript:location.href='http://localhost/SGCD/tratamento.html'">Tratamentos</a>
+						<a href="javascript:location.href='http://localhost/SGCD/agenda.html'">Marcação</a>
+					</div>
+				</li>
+				<li class="dropdown"><a href=javascript:void(0)" class="dropbtn">Ajuda</a>
+					<div class="dropdown-content">
+						<a href="javascript:location.href='http://localhost/SGCD/versao.html'">Nota da Versão</a>
+						<a href="javascript:location.href='http://localhost/SGCD/sobre.html'">Sobre SGCD</a>
+						<a href="javascript:location.href='http://localhost/SGCD/suporte.html'">Suporte</a>
+					</div>
+				</li>
+				<li style="float:right; background-color: red"><a class="sair" href="javascript:location.href='http://localhost/SGCD/index.html'">Sair</a></li>
+			</ul>
+		</div>
+		
+		<div class="CorpoPagina">
+			
+			<!-- todo conteudo do corpo da pagina -->
+			<div class="Conteudo">
+				<!-- area contendo os icones de acesso rapido -->
+				<div class="acesso_rapido">
+					<table >
+						<tr>
+							<td>
+							<a href="javascript:location.href='http://localhost/SGCD/paciente_form.html'"><img src="_imagem/icon1.png" alt="icone 1" /></a>
+							</td>
+							<td style="width:40px">
+							</td>
+							<td>
+							<a href="javascript:location.href='http://localhost/SGCD/tratamento.html'">
+								<img src="_imagem/icon2.png" alt="icone 2" />
+							</a>
+							</td>
+							<td style="width:40px">
+							</td>
+							<td>
+							<a href="javascript:location.href='http://localhost/SGCD/agenda.html'">
+								<img src="_imagem/icon3.png" alt="icone 3" />
+							</a>
+							</td>
+						</tr>
+					</table>
+					<h2> Orçamento</h2> 
+						
+						<table>
+							<tr>
+								<td>
+									<label for="nome">Paciente</label>
+								</td>
+								<td colspan="9">
+									<input type="text" name="paciente" style="width:60px;">
+									<input type="text" name="nome_paciente"  style="width:596px;">
+									<a href="javascript:location.href='http://localhost/SGCD/paciente_form.html'">
+								<img class="botaoSec" align="absmiddle" src="_imagem/icone-new.png" /></a>
+								</td>
+							</tr>
+							<tr class="Linespace"></tr>
+							<tr>
+								<td>
+									<label for="nome">Nº INPS: </label>
+								</td>
+								<td align="left">
+									<input type="text" name="nro_inps">
+								</td>
+								<td class="Cellspace"></td>
+								<td>
+									<label for="sobrenome">Tipo Seguro: </label>
+								</td>
+								<td align="left">
+									<input type="text" name="tipo">
+								</td>
+								<td class="Cellspace"></td>
+								<td>
+									<label for="sobrenome">Nº Credencial: </label>
+								</td>
+								<td align="left">
+									<input type="text" name="credencial">
+								</td>
+							</tr>
+						</table>
+					<br />
+					<!-- tabela das informações dos orcamentos -->
+				<div class="tabelasInfo">
+					<table id="conteudo_table">
+						<tr>
+							<th>Grupo</th>
+							<th>Designação</th>
+							<th>Quantidade</th>
+							<th>Preço Unit.</th>
+							<th>Data</th>
+						</tr>
+						<tr>
+							<td>Mario Adalberto Ficticino</td>
+							<td>Salamansa</td>
+							<td>1</td>
+							<td>5.800$00</td>
+							<td>21/12/2017</td>
+						</tr>
+						<tr>
+							<td>Mario Adalberto Ficticino</td>
+							<td>Salamansa</td>
+							<td>1</td>
+							<td>5.800$00</td>
+							<td>21/12/2017</td>
+						</tr>
+						<tr>
+							<td>Ana Carolina Santana</td>
+							<td>Salamansa</td>
+							<td>1</td>
+							<td>5.800$00</td>
+							<td>21/12/2017</td>
+						<tr>
+							<td>Ana Carolina Santana</td>
+							<td>Salamansa</td>
+							<td>1</td>
+							<td>5.800$00</td>
+							<td>21/12/2017</td>
+						</tr>
+					</table>
+				</div>
+
+							<!--Botão impressão -->
+				<br/>
+					<table class="SecundarioTab"> 
+						<tr>
+							<td>
+							<img src="_imagem/icon4.png" align="absmiddle" onclick="imprimir()" />
+								<script>
+										function imprimir() {
+											 window.print();
+										}	     	
+								</script>
+								<label for="imprimir_label">Imprimir</label>
+							</td >
+						</tr>
+					</table>
+					<br/>
+				</div>
+			</div>
+			<br/>
+		</div>
+		<!-- area do rodape da pagina -->
+		<div class="Rodape">
+			<div class="Footer">
+				<span>Copyright 2018 © Ivan Neves. Disciplina Interação Homem Máquina.      All Rights Reserved. S.G.C.D version 1.0&nbsp;- 
+                        January 2018.</span>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</head>
+</html>

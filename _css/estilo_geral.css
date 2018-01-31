@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+body{
+	border-style: none;
+    border-color: inherit;
+}
+head{
+	display: none;
+}
+/* Formatação de Cabeçalho */
+#header{
+	clear: both;
+}
+
+header#cabecalho h1 {
+	font-family: sans-serif;
+	font-size: 30px;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+}
+
+#header-left { 
+	float: left; 
+}
+#header-right { 
+	float: right; 
+}
+
+#logHef{
+	padding: 0px 0 0px 20px;
+	display: block;
+}
+
+.LogoTipo{
+	position: static;
+	clear: both;
+	background-position: left;
+	background: url("../_imagem/logoSGCD3.png");
+	width: 300px;
+	height: 63px;
+	background-repeat: no-repeat;
+}
+
+.SGCD{
+	position: static;
+	clear: both;
+	background: url("../_imagem/sgcd_texto.png");
+	width: 600px;
+	height: 63px;
+	background-position: right;
+	background-repeat: no-repeat;
+	/*padding: 0px 251px 0px 0px;*/
+}
+
+
+/*menu teste*/
+.menu
+{
+    float: left;
+    /*padding-top: 70px;*/
+    /*margin-left: 10px;*/
+	min-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #014278;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 11px 18px;
+    text-decoration: none;
+}
+
+/*drpdown*/
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.sair), .dropdown:hover .dropbtn {
+    background-color: #b9b8b8;
+    color: black;
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {background-color: #b9b8b8}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*corpo da pagina*/
+.CorpoPagina{
+	float:left;
+	clear:both;
+	height: 90%;
+	min-height: 100%;
+	width: 100%;
+}
+
+.Conteudo{
+	clear: both;
+	margin: 0 auto;
+	width: 99%;
+	height: 100%;
+}
+
+/*area icones acesso rapido*/
+.acesso_rapido{
+	padding-top:25px;
+}
+
+
+/*area do rodape*/
+.Rodape{
+	position: fixed;
+	height: 25px;
+	width: 99%;
+	bottom: 0;
+	text-align: left;
+	border-top: 2px solid #BDBEBE;
+	background-color: #ccc8c8;
+	
+}
+.Footer{
+	width: 99%;
+	margin: 0 auto;
+	padding: 4px 0 0 0;
+	line-height: 15px;
+}
+
+/*Formatação dos Formularios das Paginas*/
+.formulario_paciente{
+	/*margin: 0 auto; metodo para centralizar o div na pagina*/
+	width:70%;
+}
+.formulario_dentista{
+	width:70%;
+}
+.formulario_outros{
+	width:70%;
+}
+/*espaco nas celulas das tabelas dos form*/
+.Cellspace{
+	width:50px;
+}
+/*espaco nas linhas das tabelas dos form*/
+.Linespace{
+	height: 20px;
+}
+/*espaçamento dos inputs (texbox, radiobutton, etc)*/
+.spaceInput{
+	width: 80px;
+}
+.select{
+	width: 100px;
+}
+
+/*tabelas de conteudo dos dentistas e pacientes*/
+#conteudo_table{
+	border-collapse: collapse;
+    width: 70%;
+}
+#conteudo_table td, #conteudo_table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#conteudo_table tr:hover {
+	background-color: #ddd;
+	}
+#conteudo_table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #2e9ccf;
+    color: white;
+}
+/*estilo imagem de apagar e editar*/
+.botaotabela{
+	width: 20px;
+	margin-bottom: -5px;
+}
+.botaoSec{
+	width: 20px;
+}
+
+.SecundarioTab{
+	width: 70%;
+	text-align:right;
+}

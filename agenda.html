@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+	<meta charset="utf-8"/>
+	<title>Agenda</title>
+	<link rel="stylesheet" href="_css/estilo_geral.css"/>
+<body>
+	<div >
+		<header id="Cabecalho">
+		<!-- cabecalho a esquerda-contem logotipo -->
+			<div id="header-left">
+				<a id="logHef" title="S.G.C.O Nôs Boka">
+				<div class="LogoTipo">
+				</div>
+				</a>
+			</div>
+			<!-- cabecalho a direita-contem nome do SGCD -->
+			<div id="header-right">
+				<div class="SGCD">
+				
+				</div>
+			</div>
+       	
+		</header>
+		<!-- menu horizontal com dropdown -->
+		<div class="menu">
+		<hr>
+			<ul>
+				<li><a class="active" href="javascript:location.href='http://localhost/SGCD/home.html'">Inicio</a></li>
+				<li class="dropdown"><a href=javascript:void(0)" class="dropbtn">Registos</a>
+					<div class="dropdown-content">
+						<a href="javascript:location.href='http://localhost/SGCD/dentista.html'">Dentista</a>
+						<a href="javascript:location.href='http://localhost/SGCD/funcionario.html'">Funcionário</a>
+						<a href="javascript:location.href='http://localhost/SGCD/paciente.html'">Pacientes</a>
+					</div>
+				</li>
+				<li class="dropdown"><a href=javascript:void(0)" class="dropbtn">Tarefas</a>
+					<div class="dropdown-content">
+						<a href="javascript:location.href='http://localhost/SGCD/orcamento.html'">Orçamentos</a>
+						<a href="javascript:location.href='http://localhost/SGCD/tratamento.html'">Tratamentos</a>
+						<a href="javascript:location.href='http://localhost/SGCD/agenda.html'">Marcação</a>
+					</div>
+				</li>
+				<li class="dropdown"><a href=javascript:void(0)" class="dropbtn">Ajuda</a>
+					<div class="dropdown-content">
+						<a href="javascript:location.href='http://localhost/SGCD/versao.html'">Nota da Versão</a>
+						<a href="javascript:location.href='http://localhost/SGCD/sobre.html'">Sobre SGCD</a>
+						<a href="javascript:location.href='http://localhost/SGCD/suporte.html'">Suporte</a>
+					</div>
+				</li>
+				<li style="float:right; background-color: red"><a class="sair" href="javascript:location.href='http://localhost/SGCD/index.html'">Sair</a></li>
+			</ul>
+		</div>
+		
+		<div class="CorpoPagina">
+			
+			<!-- todo conteudo do corpo da pagina -->
+			<div class="Conteudo">
+				<!-- area contendo os icones de acesso rapido -->
+				<div class="acesso_rapido">
+					<table >
+						<tr>
+							<td>
+							<a href="javascript:location.href='http://localhost/SGCD/paciente_form.html'"><img src="_imagem/icon1.png" alt="icone 1" /></a>
+							</td>
+							<td style="width:40px">
+							</td>
+							<td>
+							<a href="javascript:location.href='http://localhost/SGCD/tratamento.html'">
+								<img src="_imagem/icon2.png" alt="icone 2" />
+							</a>
+							</td>
+							<td style="width:40px">
+							</td>
+							<td>
+							<a href="javascript:location.href='http://localhost/SGCD/agenda.html'">
+								<img src="_imagem/icon3.png" alt="icone 3" />
+							</a>
+							</td>
+						</tr>
+					</table>
+					<h2>Lista de Marcações</h2>
+					<br />
+					<table class="SecundarioTab"> 
+						<tr>
+							<td>
+								<a href="javascript:location.href='http://localhost/SGCD/agenda_form.html'">
+								<img class="botaoSec" align="absmiddle" src="_imagem/icone-new.png" /></a>
+								<label for="novo_label">Marcação</label>
+							</td >
+						</tr>
+					</table>
+					</table>
+					<br />
+					<br />
+					<!-- tabela das informações dos dentistas -->
+				<div class="tabelasInfo">
+					<table id="conteudo_table">
+						<tr>
+							<th>Paciente</th>
+							<th>Dentista</th>
+							<th>Telefone</th>
+							<th>Dia do Mês</th>
+							<th>Obs</th>
+						</tr>
+						<tr>
+							<td>Mario Adalberto Ficticino</td>
+							<td>Dra Melissa Oliveira</td>
+							<td>983 72 12</td>
+							<td>21/01/2018</td>
+							<td>31/01/2018</td>
+						</tr>
+						<tr>
+							<td>Ivan Renato Gomes Neves</td>
+							<td>Dra Sara Santos</td>
+							<td>986 73 25</td>
+							<td>02/02/2018</td>
+							<td>05/02/2018</td>
+						</tr>
+						<tr>
+							<td>Waldir Antonio Luz Fortes	</td>
+							<td>Chã de Marinha</td>
+							<td>997 25 82</td>
+							<td>05/02/2018</td>
+							<td>07/02/2018</td>
+						</tr>
+						<tr>
+							<td>Flavio Denilson Dantas</td>
+							<td>Dra Melissa Oliveira</td>
+							<td>990 30 45</td>
+							<td>14/02/2018</td>
+							<td>16/02/2018</td>
+						</tr>
+					</table>
+				</div>
+
+							<!--Botão impressão -->
+				<br/>
+					<table class="SecundarioTab"> 
+						<tr>
+							<td>
+							<img src="_imagem/icon4.png" align="absmiddle" onclick="imprimir()" />
+								<script>
+										function imprimir() {
+											 window.print();
+										}	     	
+								</script>
+								<label for="imprimir_label">Imprimir</label>
+							</td >
+						</tr>
+					</table>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!-- area do rodape da pagina -->
+		<div class="Rodape">
+			<div class="Footer">
+				<span>Copyright 2018 © Ivan Neves. Disciplina Interação Homem Máquina.      All Rights Reserved. S.G.C.D version 1.0&nbsp;- 
+                        January 2018.</span>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</head>
+</html>
